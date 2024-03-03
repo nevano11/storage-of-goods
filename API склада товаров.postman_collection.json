@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "855030e8-fd24-4b79-b959-31f9178b6c79",
+		"name": "API склада товаров",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "22208486"
+	},
+	"item": [
+		{
+			"name": "Получить товары на складе",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Зарезервировать товары",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\"3\", \"2\"]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/storage/reserve"
+			},
+			"response": []
+		},
+		{
+			"name": "Освободить товары",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\"1\", \"2\"]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/storage/free"
+			},
+			"response": []
+		}
+	]
+}
