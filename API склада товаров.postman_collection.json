@@ -10,7 +10,26 @@
 			"name": "Получить товары на складе",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/storage/goods-in-stock?code=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"storage",
+						"goods-in-stock"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "2"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -21,7 +40,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "[\"3\", \"2\"]",
+					"raw": "[\n    \"1\",\n    \"2\"\n]",
 					"options": {
 						"raw": {
 							"language": "json"
